@@ -1,0 +1,95 @@
+.__main_section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  color: #fff;
+}
+.__sub {
+  background-color: #141d38;
+  grid-column: 1 / span 2;
+  height: 100vh;
+  width: 5%;
+  transition: all 0.5s ease-out;
+  position: fixed;
+}
+.__sub_element {
+  margin-left: 1.2em !important;
+  margin-top: 1.2em !important;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-size: 16px !important;
+}
+
+.__selected {
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: black;
+}
+
+.__sub:hover {
+  width: 17%;
+}
+
+.__child_element {
+  grid-column: 3/12;
+  color: rgba(0, 0, 0, 0.76);
+  margin-left: -7rem;
+  transition: all 0.5s ease-out;
+}
+
+.__sub:hover ~ .__child_element {
+  grid-column: 3 / 12; /* Adjust position of child element */
+  margin-left: 20px;
+}
+
+.__sidenav_link {
+  text-decoration: none;
+}
+
+@media (max-width: 1120px) {
+  .__sub {
+    grid-column: 1 / span 4;
+    width: 6%;
+  }
+
+  .__sub:hover {
+    width: 25%;
+  }
+
+  .__child_element {
+    grid-column: 4/12;
+    margin-left: -10rem;
+    /* margin-left: calc(100% - 45em); */
+  }
+
+  .__sub:hover ~ .__child_element {
+    grid-column: 4 / 12;
+  }
+}
+
+@media (max-width: 750px) {
+  .__sub {
+    grid-column: 1 / span 4;
+    width: 10%;
+  }
+
+  .__sub:hover {
+    width: 35%;
+  }
+
+  .__child_element {
+    grid-column: 4/12;
+    margin-left: -5rem;
+    /* margin-left: calc(100% - 45em); */
+  }
+
+  .__sub:hover ~ .__child_element {
+    grid-column: 4 / 12;
+    margin-left: 5rem;
+  }
+}

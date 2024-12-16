@@ -1,0 +1,22 @@
+.__calender_main {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: 600;
+  text-align: center;
+}
+.__bold {
+  font-weight: 900;
+}
+
+.____calender_head {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin: 2em 0;
+}
+
+.__green {
+  /* width: 70px; */
+  height: 3px;
+  border-bottom: #ff7081;
+}
