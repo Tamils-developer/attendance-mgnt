@@ -1,0 +1,20 @@
+.__approval_list {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: auto;
+  padding: 2em;
+  border-radius: 8px;
+  margin: 2em 0 3em 0;
+  /* grid-column: 1/13; */
+  /* display: grid;
+  grid-template-columns: repeat(12, 1fr); */
+  /* gap: 5em; */
+}
+
+.__approval_list .__button_container {
+  justify-content: center;
+  margin: 0;
+}
+
+.__approval_list h5 {
+  margin-bottom: 1em;
+}
